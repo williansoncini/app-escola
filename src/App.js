@@ -8,8 +8,6 @@ import Header from './components/Header';
 import RoutesApp from './routes';
 import store, { persistor } from './store';
 
-require('dotenv').config();
-
 function App() {
   return (
     <Provider store={store}>
