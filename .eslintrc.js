@@ -30,5 +30,10 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'no-unused-vars': 0,
     'jsx-a11y/anchor-is-valid': 0,
+    'no-fallthrough': 0,
+    'no-empty': 0,
+    'react/jsx-no-useless-fragment': 0,
+    'no-useless-return': 0,
+    'no-shadow': 0,
   },
 };
