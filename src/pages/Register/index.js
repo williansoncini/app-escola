@@ -50,7 +50,15 @@ export default function Register() {
 
     if (formError) return;
 
-    dispatch(actions.registerRequest({ nome: name, email, password, id }));
+    dispatch(
+      actions.registerRequest({
+        nome: name,
+        email,
+        password,
+        id,
+        navigate: () => navigate('/login'),
+      })
+    );
   };
 
   return (

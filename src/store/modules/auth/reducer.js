@@ -33,11 +33,16 @@ export default function (state = initialState, action) {
       newState.isLoading = true;
       return newState;
     }
-    case types.REGISTER_SUCCESS: {
+    case types.REGISTER_UPDATED_SUCCESS: {
       const newState = { ...initialState };
+      newState.user.id = action.payload.id;
       newState.user.nome = action.payload.nome;
       newState.user.email = action.payload.email;
-
+      newState.isLoading = false;
+      return newState;
+    }
+    case types.REGISTER_SUCCESS: {
+      const newState = { ...initialState };
       newState.isLoading = false;
       return newState;
     }

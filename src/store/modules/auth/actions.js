@@ -33,6 +33,12 @@ export function registerSuccess(payload) {
     payload,
   };
 }
+export function registerUpdatedSuccess(payload) {
+  return {
+    type: types.REGISTER_SUCCESS,
+    payload,
+  };
+}
 export function registerFailure(payload) {
   return {
     type: types.REGISTER_FAILURE,
