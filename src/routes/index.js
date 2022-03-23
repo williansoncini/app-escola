@@ -15,7 +15,7 @@ export default function RoutesApp() {
       <Route element={<ProtectedRoute />}>
         <Route path="/aluno/:id/edit" element={<Aluno />} />
         <Route path="/aluno" element={<Aluno />} />
-        <Route path="/fotos/:id" element={<Aluno />} />
+        <Route path="/fotos/:id" element={<Fotos />} />
       </Route>
       <Route path="/" element={<Alunos />} />
       <Route path="/register" element={<Register />} />
